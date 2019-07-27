@@ -107,3 +107,6 @@ venv.bak/
 
 # jetbrains ide
 .idea
+
+# env files
+.env.*

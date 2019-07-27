@@ -4,18 +4,15 @@ from typing import List
 import requests
 import xmltodict
 
-API_KEY = os.environ["GOODREADS_API_KEY"]
-USER_ID = "20891766"
+from whatcha_readin.settings import load_env
+
 SHELF = "currently-reading"
 VERSION = 2
-
 API_URL = "https://www.goodreads.com/review/list"
-
-params = {"v": VERSION, "shelf": SHELF, "id": USER_ID, "key": API_KEY}
 
 
 def get_currently_reading() -> List[str]:
-    response = requests.get(API_URL, params)
+    response = _make_goodreads_request()
     wrapped = xmltodict.parse(response.text)
 
     try:
@@ -26,3 +23,18 @@ def get_currently_reading() -> List[str]:
         book_titles = []
 
     return book_titles
+
+
+def _make_goodreads_request():
+    load_env()
+
+    api_key = os.environ["GOODREADS_API_KEY"]
+    user_id = os.environ["GOODREADS_USER_ID"]
+
+    params = {"v": VERSION, "shelf": SHELF, "id": user_id, "key": api_key}
+
+    response = requests.get(API_URL, params)
+    return response
+
+
+print(get_currently_reading())

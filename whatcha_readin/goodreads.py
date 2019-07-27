@@ -26,3 +26,7 @@ except KeyError:
 
 
 print(books)
+
+def get_currently_reading_titles():
+  # TODO: implement
+  return ['Harry Potter', 'Game of Thrones']

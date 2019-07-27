@@ -4,7 +4,7 @@ from typing import List
 import requests
 import xmltodict
 
-API_KEY = os.environ['GOODREADS_API_KEY']
+API_KEY = os.environ["GOODREADS_API_KEY"]
 USER_ID = "20891766"
 SHELF = "currently-reading"
 VERSION = 2

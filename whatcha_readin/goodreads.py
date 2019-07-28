@@ -4,7 +4,7 @@ from typing import List
 import requests
 import xmltodict
 
-from .settings import load_env
+from whatcha_readin.settings import load_env
 
 SHELF = "currently-reading"
 VERSION = 2

@@ -8,12 +8,10 @@ import shutil
 
 import click
 
-from whatcha_readin.utils import (
+from whatcha_readin.cli.utils import (
     _warn,
     _note,
-    _info,
     get_git_root_dir,
-    get_git_config_hooks_value,
 )
 from whatcha_readin._config import VERSION
 

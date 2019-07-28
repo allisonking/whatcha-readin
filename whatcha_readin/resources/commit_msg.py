@@ -13,4 +13,4 @@ with open(sys.argv[1]) as f:
 
 # append the currently reading books
 with open(sys.argv[1], "w") as f:
-    f.write(f'{msg} [READING: {", ".join(currently_reading)}]')
+    f.write(f'{msg} [READING: {"| ".join(currently_reading)}]')

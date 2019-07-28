@@ -3,20 +3,20 @@ Adapted from https://github.com/bmwant/podmena/blob/master/podmena/cli.py
 """
 
 import os
-import sys
 import shutil
+import sys
 
 import click
 
+from whatcha_readin._config import VERSION
 from whatcha_readin.cli.utils import (
     _warn,
     _note,
     get_git_root_dir,
 )
-from whatcha_readin._config import VERSION
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-RESOURCES_DIR = os.path.join(CURRENT_DIR, "resources")
+RESOURCES_DIR = os.path.join(CURRENT_DIR, "../resources")
 HOOK_FILENAME = "commit_msg.py"
 HOOK_FILENAME_DEST = "commit-msg"
 

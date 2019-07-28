@@ -34,8 +34,6 @@ def _make_goodreads_request():
     api_key = config["GOODREADS"]["api_key"]
     user_id = config["GOODREADS"]["user_id"]
 
-    print(api_key, user_id)
-
     params = {"v": VERSION, "shelf": SHELF, "id": user_id, "key": api_key}
 
     response = requests.get(API_URL, params)

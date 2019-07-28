@@ -19,7 +19,6 @@ setuptools.setup(
         "Click",
         "configparser",
         "idna",
-        "python-dotenv",
         "requests",
         "urllib3",
         "xmltodict",

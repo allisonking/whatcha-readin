@@ -108,5 +108,8 @@ venv.bak/
 # jetbrains ide
 .idea
 
+# vscode
+.vscode/
+
 # env files
 .env.*

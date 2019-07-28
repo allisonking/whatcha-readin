@@ -3,9 +3,7 @@
 import sys
 from whatcha_readin.goodreads import get_currently_reading
 
-# TODO: implement
 currently_reading = get_currently_reading()
-# currently_reading = ['Harry Potter', 'Game of Thrones']
 
 # get the original commit message
 with open(sys.argv[1]) as f:
@@ -13,4 +11,8 @@ with open(sys.argv[1]) as f:
 
 # append the currently reading books
 with open(sys.argv[1], "w") as f:
-    f.write(f'{msg} [READING: {"| ".join(currently_reading)}]')
+    f.write(msg)
+    if currently_reading:
+        f.write("\nBooks-reading:")
+    for book in currently_reading:
+        f.write("\n{}".format(book))

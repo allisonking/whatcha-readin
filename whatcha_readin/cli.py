@@ -7,16 +7,14 @@ import shutil
 import sys
 
 import click
+import configparser
 
-from whatcha_readin._config import VERSION
-from whatcha_readin.utils import (
-    _warn,
-    _note,
-    get_git_root_dir,
-)
+from whatcha_readin.config import VERSION
+from whatcha_readin.utils import _warn, _note, get_git_root_dir
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 RESOURCES_DIR = os.path.join(CURRENT_DIR, "resources")
+CONFIG = "wr-config.ini"
 HOOK_FILENAME = "commit_msg.py"
 HOOK_FILENAME_DEST = "commit-msg"
 
@@ -61,18 +59,55 @@ def install():
         sys.exit(1)
 
 
+def is_installed():
+    git_local_root = os.path.join(os.getcwd(), ".git")
+    hook_filepath = os.path.join(git_local_root, "hooks", HOOK_FILENAME_DEST)
+    return os.path.exists(hook_filepath)
+
+
+# def get_config():
+#     git_local_root = os.path.join(os.getcwd(), ".git")
+#     local_hooks_path = os.path.join(git_local_root, "hooks")
+#     config_path = os.path.join(local_hooks_path, CONFIG)
+#     parser = configparser.ConfigParser()
+#     parser.read(config_path)
+#     return parser
+
+
 @cli.command(
     name="uninstall", help="Uninstall whatcha-readin for current git repository"
 )
 def uninstall():
-    git_local_root = os.path.join(os.getcwd(), ".git")
-    hook_filepath = os.path.join(git_local_root, "hooks", HOOK_FILENAME_DEST)
-    if os.path.exists(hook_filepath):
+    if is_installed():
+        git_local_root = os.path.join(os.getcwd(), ".git")
+        hook_filepath = os.path.join(git_local_root, "hooks", HOOK_FILENAME_DEST)
         os.remove(hook_filepath)
         _note("Uninstalled for current repository")
     else:
         _warn("whatcha-readin is not installed for current repository!")
         sys.exit(1)
+
+
+@cli.command(name="config", help="configure your goodreads user by ID")
+@click.option("--user-id", prompt="Your goodreads user ID", required=True)
+@click.option("--key", prompt="Your goodreads API key", required=True)
+def configure_user_id(user_id, key):
+    if not is_installed():
+        _warn(
+            "Cannot configure without installing first. Please run `whatcha-readin install`"
+        )
+        sys.exit(1)
+
+    config = configparser.ConfigParser()
+    config["GOODREADS"] = {"api_key": key, "user_id": user_id}
+
+    git_local_root = os.path.join(os.getcwd(), ".git")
+    local_hooks_path = os.path.join(git_local_root, "hooks")
+    config_path = os.path.join(local_hooks_path, CONFIG)
+    with open(config_path, "w") as f:
+        config.write(f)
+
+    _note("Successfully configured goodreads access!")
 
 
 if __name__ == "__main__":

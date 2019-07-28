@@ -1,4 +1,5 @@
 import setuptools
+from whatcha_readin.config import VERSION
 
 setuptools.setup(
     name="whatcha-readin",
@@ -8,18 +9,15 @@ setuptools.setup(
     classifers=["Programming Language :: Python :: 3.7"],
     license="MIT ",
     python_requires=">=3.5",
-    version="0.0.1",
+    version=VERSION,
     description="githook for adding currently reading books to git commit messages",
     packages=setuptools.find_packages(),
-    entry_points={
-      'console_scripts': [
-          'whatcha-readin=whatcha_readin.cli:cli'
-      ]
-    },
+    entry_points={"console_scripts": ["whatcha-readin=whatcha_readin.cli:cli"]},
     install_requires=[
         "certifi",
         "chardet",
         "Click",
+        "configparser",
         "idna",
         "python-dotenv",
         "requests",

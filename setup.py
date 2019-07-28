@@ -11,6 +11,11 @@ setuptools.setup(
     version="0.0.1",
     description="githook for adding currently reading books to git commit messages",
     packages=setuptools.find_packages(),
+    entry_points={
+      'console_scripts': [
+          'whatcha-readin=whatcha_readin.cli:cli'
+      ]
+    },
     install_requires=[
         "certifi",
         "chardet",

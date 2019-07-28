@@ -45,7 +45,10 @@ def install():
         dst_file = WhatchaReadinPaths.get_hook_path()
         shutil.copyfile(src_file, dst_file)
         os.chmod(dst_file, 0o0775)
-        _note("Successfully installed for this repository!")
+        _note(
+            """Successfully installed for this repository!
+            \nPlease configure goodreads access with `whatcha-readin configure`"""
+        )
     else:
         _warn("Not a git repository")
         sys.exit(1)

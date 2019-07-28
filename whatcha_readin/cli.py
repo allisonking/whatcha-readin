@@ -15,7 +15,7 @@ from whatcha_readin.utils import (
     get_git_root_dir,
     get_git_config_hooks_value,
 )
-from whatcha_readin.config import VERSION
+from whatcha_readin._config import VERSION
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 RESOURCES_DIR = os.path.join(CURRENT_DIR, "resources")
@@ -48,7 +48,7 @@ def status():
 
 
 @cli.command(name="install", help="Install whatcha-readin for current git repository")
-def local_install():
+def install():
     git_local_root = os.path.join(os.getcwd(), ".git")
     local_hooks_path = os.path.join(git_local_root, "hooks")
     if os.path.exists(git_local_root) and os.path.isdir(git_local_root):
@@ -66,7 +66,7 @@ def local_install():
 @cli.command(
     name="uninstall", help="Uninstall whatcha-readin for current git repository"
 )
-def local_uninstall():
+def uninstall():
     git_local_root = os.path.join(os.getcwd(), ".git")
     hook_filepath = os.path.join(git_local_root, "hooks", HOOK_FILENAME_DEST)
     if os.path.exists(hook_filepath):

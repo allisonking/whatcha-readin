@@ -14,4 +14,4 @@ install: pip install tox
 script: tox
 
 notifications:
-  email: true
+  email: false

@@ -2,12 +2,12 @@
 Adapted from https://github.com/bmwant/podmena/blob/master/podmena/cli.py
 """
 
+import configparser
 import os
 import shutil
 import sys
 
 import click
-import configparser
 
 from whatcha_readin.config import VERSION
 from whatcha_readin.utils import _warn, _note, WhatchaReadinPaths
@@ -79,7 +79,8 @@ def configure_goodreads_access(user_id, key):
     # TODO: can this be called before prompting?
     if not is_installed():
         _warn(
-            "Cannot configure without installing first. Please run `whatcha-readin install`"
+            "Cannot configure without installing first. "
+            "Please run `whatcha-readin install`"
         )
         sys.exit(1)
 

@@ -60,4 +60,3 @@ class WhatchaReadinPaths:
     def get_config_path():
         git_root_dir = WhatchaReadinPaths.get_git_root_dir()
         return os.path.join(git_root_dir, ".git", "hooks", WhatchaReadinPaths._config)
-

@@ -8,15 +8,15 @@ import subprocess
 import click
 
 
-def _warn(message):
+def _warn(message: str) -> None:
     click.secho(message, fg="red")
 
 
-def _note(message):
+def _note(message: str) -> None:
     click.secho(message, fg="green")
 
 
-def _info(message):
+def _info(message: str) -> None:
     click.secho(message, fg="yellow")
 
 
@@ -27,7 +27,7 @@ class WhatchaReadinPaths:
     _hook_filename_dest = "commit-msg"
 
     @staticmethod
-    def get_git_root_dir():
+    def get_git_root_dir() -> str:
         try:
             return (
                 subprocess.check_output(
@@ -37,26 +37,26 @@ class WhatchaReadinPaths:
                 .strip()
             )
         except subprocess.CalledProcessError:
-            return None
+            raise
 
     @staticmethod
-    def get_resources_dir():
+    def get_resources_dir() -> str:
         current = os.path.dirname(os.path.realpath(__file__))
         return os.path.join(current, WhatchaReadinPaths._resources)
 
     @staticmethod
-    def get_src_hook_path():
+    def get_src_hook_path() -> str:
         resources = WhatchaReadinPaths.get_resources_dir()
         return os.path.join(resources, WhatchaReadinPaths._hook_filename)
 
     @staticmethod
-    def get_hook_path():
+    def get_hook_path() -> str:
         git_root_dir = WhatchaReadinPaths.get_git_root_dir()
         return os.path.join(
             git_root_dir, ".git", "hooks", WhatchaReadinPaths._hook_filename_dest
         )
 
     @staticmethod
-    def get_config_path():
+    def get_config_path() -> str:
         git_root_dir = WhatchaReadinPaths.get_git_root_dir()
         return os.path.join(git_root_dir, ".git", "hooks", WhatchaReadinPaths._config)

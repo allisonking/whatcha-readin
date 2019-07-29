@@ -22,7 +22,7 @@ def cli():
 @cli.command(
     name="status", help="Shows whether whatcha-readin is activated for this repository"
 )
-def status():
+def status() -> None:
     active = False
 
     git_root_dir = WhatchaReadinPaths.get_git_root_dir()
@@ -37,7 +37,7 @@ def status():
 
 
 @cli.command(name="install", help="Install whatcha-readin for current git repository")
-def install():
+def install() -> None:
     git_root_dir = WhatchaReadinPaths.get_git_root_dir()
     if git_root_dir:
         # copy our hook file over
@@ -54,7 +54,7 @@ def install():
         sys.exit(1)
 
 
-def is_installed():
+def is_installed() -> bool:
     hook_filepath = WhatchaReadinPaths.get_hook_path()
     return os.path.exists(hook_filepath)
 
@@ -62,7 +62,7 @@ def is_installed():
 @cli.command(
     name="uninstall", help="Uninstall whatcha-readin for current git repository"
 )
-def uninstall():
+def uninstall() -> None:
     if is_installed():
         hook_filepath = WhatchaReadinPaths.get_hook_path()
         config_path = WhatchaReadinPaths.get_config_path()
@@ -78,7 +78,7 @@ def uninstall():
 @cli.command(name="config", help="configure your goodreads user by ID")
 @click.option("--user-id", prompt="Your goodreads user ID", required=True)
 @click.option("--key", prompt="Your goodreads API key", required=True)
-def configure_goodreads_access(user_id, key):
+def configure_goodreads_access(user_id: str, key: str) -> None:
     # TODO: can this be called before prompting?
     if not is_installed():
         _warn(

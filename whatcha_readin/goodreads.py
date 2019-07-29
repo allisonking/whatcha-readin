@@ -1,6 +1,6 @@
-from typing import List
-
 import configparser
+from typing import List, Dict, Union
+
 import requests
 import xmltodict
 
@@ -26,14 +26,19 @@ def get_currently_reading() -> List[str]:
     return book_titles
 
 
-def _make_goodreads_request():
+def _make_goodreads_request() -> requests.Response:
     config = configparser.ConfigParser()
     config.read(WhatchaReadinPaths.get_config_path())
 
     api_key = config["GOODREADS"]["api_key"]
     user_id = config["GOODREADS"]["user_id"]
 
-    params = {"v": VERSION, "shelf": SHELF, "id": user_id, "key": api_key}
+    params: Dict[str, Union[str, int]] = {
+        "v": VERSION,
+        "shelf": SHELF,
+        "id": user_id,
+        "key": api_key,
+    }
 
     response = requests.get(API_URL, params)
     return response

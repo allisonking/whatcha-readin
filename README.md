@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/allisonking/whatcha-readin.svg?branch=master)](https://travis-ci.org/allisonking/whatcha-readin)
 
 # Whatcha Readin'?
-This is a small package that attempts to append the books you are reading to your commit messages using Python and Git Hooks! Ever wonder what your favorite author was reading while writing a scene? If for some reason your favorite author used git to commit their writing, now you would know! 
+This is a small package that attempts to append the books you are reading (on Goodreads) to your commit messages using Python and Git Hooks! Ever wonder what your favorite author was reading while writing a scene? If for some reason your favorite author used git to commit their writing, now you would know! 
 
 Example:
 ```
@@ -37,7 +37,7 @@ In order to query for what you are reading, you will need to:
 * Get a [Goodreads API key](https://www.goodreads.com/api/keys)
 
 ```
-whatcha-readin configure
+whatcha-readin config
 ```
 
 You will be prompted to enter your user ID and your API key. Alternatively to configure without prompting:

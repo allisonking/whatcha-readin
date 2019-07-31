@@ -1,6 +1,6 @@
 import configparser
 
-from whatcha_readin.utils import WhatchaReadinPaths
+from whatcha_readin.paths import WhatchaReadinPaths
 
 VERSION = "0.0.2"
 

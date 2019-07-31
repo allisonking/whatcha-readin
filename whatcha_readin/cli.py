@@ -10,7 +10,8 @@ import sys
 import click
 
 from whatcha_readin.config import VERSION
-from whatcha_readin.utils import _warn, _note, WhatchaReadinPaths
+from whatcha_readin.utils import _warn, _note
+from whatcha_readin.paths import WhatchaReadinPaths
 
 
 @click.group()

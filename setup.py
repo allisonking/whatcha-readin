@@ -8,7 +8,7 @@ setuptools.setup(
     author_email="allisonjuliaking@gmail.com",
     classifers=["Programming Language :: Python :: 3.7"],
     license="MIT ",
-    python_requires=">=3.5",
+    python_requires=">=3.6",
     version=VERSION,
     description="githook for adding currently reading books to git commit messages",
     packages=setuptools.find_packages(),

@@ -1,10 +1,9 @@
-import configparser
 from typing import List, Dict, Union
 
 import requests
 import xmltodict
 
-from whatcha_readin.utils import WhatchaReadinPaths
+from whatcha_readin.config import get_config
 
 SHELF = "currently-reading"
 VERSION = 2
@@ -18,7 +17,7 @@ def get_currently_reading() -> List[str]:
 
         reviews = wrapped["GoodreadsResponse"]["reviews"]["review"]
         books = [r["book"] for r in reviews]
-        book_titles = [b["isbn"] for b in books]
+        book_titles = [b["title"] for b in books]
     except (requests.exceptions.RequestException, KeyError) as e:
         print(e)
         book_titles = []
@@ -27,14 +26,9 @@ def get_currently_reading() -> List[str]:
 
 
 def _make_goodreads_request() -> requests.Response:
-    config = configparser.ConfigParser()
-    config.read(WhatchaReadinPaths.get_config_path())
-
-    # api_key = config["GOODREADS"]["api_key"]
-    # user_id = config["GOODREADS"]["user_id"]
-
-    user_id = "20891766"
-    api_key = "ExWppKTaU7Vbz7dhU3xBcw"
+    config = get_config()
+    api_key = config["GOODREADS"]["api_key"]
+    user_id = config["GOODREADS"]["user_id"]
 
     params: Dict[str, Union[str, int]] = {
         "v": VERSION,

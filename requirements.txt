@@ -3,3 +3,5 @@
 black==19.3b0
 pre-commit==1.17.0
 flake8==3.7.8
+pytest==5.0.1
+responses==0.10.6

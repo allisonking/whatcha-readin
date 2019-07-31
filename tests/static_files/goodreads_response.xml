@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key>
+            <![CDATA[ExWppKTaU7Vbz7dhU3xBcw]]>
+        </key>
+        <method>
+            <![CDATA[review_list]]>
+        </method>
+    </Request>
+    <shelf exclusive='true' id='67344174' name='currently-reading' sortable='false'></shelf>
+    <reviews start="1" end="3" total="3">
+        <review>
+            <id>2880140042</id>
+            <book>
+                <id type="integer">13812169</id>
+                <isbn>0871404338</isbn>
+                <isbn13>9780871404336</isbn13>
+                <text_reviews_count type="integer">72</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.s5uiaXxdrfBUZ-iHH0Hqyw</uri>
+                <title>When America First Met China: An Exotic History of Tea, Drugs, and Money in the Age of Sail</title>
+                <title_without_series>When America First Met China: An Exotic History of Tea, Drugs, and Money in the Age of Sail</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1337692965l/13812169._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1337692965l/13812169._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/13812169-when-america-first-met-china</link>
+                <num_pages>416</num_pages>
+                <format>Hardcover</format>
+                <edition_information/>
+                <publisher>Liverght (division of W. W. Norton)</publisher>
+                <publication_day>10</publication_day>
+                <publication_year>2012</publication_year>
+                <publication_month>9</publication_month>
+                <average_rating>3.82</average_rating>
+                <ratings_count>380</ratings_count>
+                <description>Brilliantly illuminating one of the least-understood areas of American history, best-selling author Eric Jay Dolin now traces our fraught relationship with China back to its roots: the unforgiving nineteenth-century seas that separated a brash, rising naval power from a battered ancient empire. It is a prescient fable for our time, one that surprisingly continues to shed light on our modern relationship with China. Indeed, the furious trade in furs, opium, and b che-de-mer a rare sea cucumber delicacy might have catalyzed America 's emerging economy, but it also sparked an ecological and human rights catastrophe of such epic proportions that the reverberations can still be felt today. Peopled with fascinating characters from the Financier of the Revolution Robert Morris to the Chinese emperor Qianlong, who considered foreigners inferior beings this page-turning saga of pirates and politicians, coolies and concubines.</description>
+                <authors>
+                    <author>
+                        <id>300313</id>
+                        <name>Eric Jay Dolin</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1536762170p5/300313.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1536762170p2/300313.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/300313.Eric_Jay_Dolin]]>
+                        </link>
+                        <average_rating>3.91</average_rating>
+                        <ratings_count>2502</ratings_count>
+                        <text_reviews_count>409</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2012</published>
+                <work>
+                    <id>19126881</id>
+                    <uri>kca://work/amzn1.gr.work.v1.tEI08cnVjyQW1b13A2Txwg</uri>
+                </work>
+            </book>
+            <rating>0</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf exclusive='true' id='67344174' name='currently-reading' review_shelf_id='2526854528' sortable='false'></shelf>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Tue Jul 02 07:02:12 -0700 2019</started_at>
+            <read_at></read_at>
+            <date_added>Tue Jul 02 07:02:11 -0700 2019</date_added>
+            <date_updated>Tue Jul 02 07:02:12 -0700 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+  </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/2880140042]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/2880140042]]>
+            </link>
+            <owned>0</owned>
+        </review>
+        <review>
+            <id>2880139607</id>
+            <book>
+                <id type="integer">29101479</id>
+                <isbn>0465050905</isbn>
+                <isbn13>9780465050901</isbn13>
+                <text_reviews_count type="integer">67</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.sGsWjGehVKhpnFEXZ7zJYQ</uri>
+                <title>The Trainable Cat: A Practical Guide to Making Life Happier for You and Your Cat</title>
+                <title_without_series>The Trainable Cat: A Practical Guide to Making Life Happier for You and Your Cat</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1470282863l/29101479._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1470282863l/29101479._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/29101479-the-trainable-cat</link>
+                <num_pages>352</num_pages>
+                <format>Hardcover</format>
+                <edition_information/>
+                <publisher>Basic Books</publisher>
+                <publication_day>13</publication_day>
+                <publication_year>2016</publication_year>
+                <publication_month>9</publication_month>
+                <average_rating>3.67</average_rating>
+                <ratings_count>460</ratings_count>
+                <description>&lt;b&gt;
+  &lt;b&gt;A &lt;i&gt;New York Times &lt;/i&gt;Bestseller&lt;/b&gt;
+&lt;/b&gt;&lt;br /&gt;&lt;b&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;"I have to hand it to Bradshaw and Ellis: Once you suss out their basic cat-training philosophy, their methods totally work." --&lt;i&gt;Slate&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;&lt;/b&gt;We often assume that cats can't be trained, and don't need to be. But in &lt;i&gt;The Trainable Cat&lt;/i&gt;, bestselling anthrozoologist John Bradshaw and cat expert Sarah Ellis show that cats absolutely must be trained in order to enrich the bond between pet and owner. Full of training tips and exercises--from introducing your cat to a new baby to helping them deal with visits to the vet--&lt;i&gt;The Trainable Cat &lt;/i&gt;is the essential cat bible for cat owners and lovers.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;"I doubt you'll find a more well-informed or scientific book on cats that better shows you how feline thinking works."&lt;/b&gt;</description>
+                <authors>
+                    <author>
+                        <id>14196952</id>
+                        <name>John   Bradshaw</name>
+                        <role></role>
+                        <image_url nophoto='true'>
+                            <![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+                        </image_url>
+                        <small_image_url nophoto='true'>
+                            <![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/14196952.John_Bradshaw]]>
+                        </link>
+                        <average_rating>3.65</average_rating>
+                        <ratings_count>5989</ratings_count>
+                        <text_reviews_count>873</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2016</published>
+                <work>
+                    <id>49339424</id>
+                    <uri>kca://work/amzn1.gr.work.v1.IowNzoZF9BggnMguBREFrA</uri>
+                </work>
+            </book>
+            <rating>0</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf exclusive='true' id='67344174' name='currently-reading' review_shelf_id='2526854010' sortable='false'></shelf>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Tue Jul 02 07:01:51 -0700 2019</started_at>
+            <read_at></read_at>
+            <date_added>Tue Jul 02 07:01:50 -0700 2019</date_added>
+            <date_updated>Tue Jul 02 07:01:51 -0700 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+  </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/2880139607]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/2880139607]]>
+            </link>
+            <owned>0</owned>
+        </review>
+        <review>
+            <id>2873791035</id>
+            <book>
+                <id type="integer">6522095</id>
+                <isbn nil="true"/>
+                <isbn13 nil="true"/>
+                <text_reviews_count type="integer">81</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.2PV1s6fXeUGQdeSQlYa3OA</uri>
+                <title>Fevre Dream</title>
+                <title_without_series>Fevre Dream</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351482897l/6522095._SY160_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351482897l/6522095._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/6522095-fevre-dream</link>
+                <num_pages>368</num_pages>
+                <format></format>
+                <edition_information/>
+                <publisher>Bantam</publisher>
+                <publication_day>28</publication_day>
+                <publication_year>2004</publication_year>
+                <publication_month>9</publication_month>
+                <average_rating>3.86</average_rating>
+                <ratings_count>19923</ratings_count>
+                <description>&lt;b&gt;A THRILLING REINVENTION OF THE VAMPIRE NOVEL BY THE MASTER OF MODERN FANTASY, GEORGE R. R. MARTIN&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Abner Marsh, a struggling riverboat captain, suspects that something’s amiss when he is approached by a wealthy aristocrat with a lucrative offer. The hauntingly pale, steely-eyed Joshua York doesn’t care that the icy winter of 1857 has wiped out all but one of Marsh’s dilapidated fleet; nor does he care that he won’t earn back his investment in a decade. York’s reasons for traversing the powerful Mississippi are to be none of Marsh’s concern—no matter how bizarre, arbitrary, or capricious York’s actions may prove. Not until the maiden voyage of &lt;i&gt;Fevre Dream&lt;/i&gt; does Marsh realize that he has joined a mission both more sinister, and perhaps more noble, than his most fantastic nightmare—and humankind’s most impossible dream.</description>
+                <authors>
+                    <author>
+                        <id>346732</id>
+                        <name>George R.R. Martin</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1563055799p5/346732.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1563055799p2/346732.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/346732.George_R_R_Martin]]>
+                        </link>
+                        <average_rating>4.37</average_rating>
+                        <ratings_count>5027546</ratings_count>
+                        <text_reviews_count>185690</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2004</published>
+                <work>
+                    <id>2564105</id>
+                    <uri>kca://work/amzn1.gr.work.v1.0pQvsW16HJpaC1oRrXy6jw</uri>
+                </work>
+            </book>
+            <rating>0</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf exclusive='true' id='67344174' name='currently-reading' review_shelf_id='2520553456' sortable='false'></shelf>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Thu Jun 27 05:20:34 -0700 2019</started_at>
+            <read_at></read_at>
+            <date_added>Thu Jun 27 05:20:34 -0700 2019</date_added>
+            <date_updated>Thu Jun 27 05:20:34 -0700 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+  </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/2873791035]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/2873791035]]>
+            </link>
+            <owned>0</owned>
+        </review>
+    </reviews>
+</GoodreadsResponse>

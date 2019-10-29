@@ -16,7 +16,11 @@ def get_currently_reading() -> List[str]:
         wrapped = xmltodict.parse(response.text)
 
         reviews = wrapped["GoodreadsResponse"]["reviews"]["review"]
-        books = [r["book"] for r in reviews]
+        try:
+            books = [r["book"] for r in reviews]
+        except TypeError:
+            # only one entry
+            books = [reviews["book"]]
         book_titles = [b["title"] for b in books]
     except (requests.exceptions.RequestException, KeyError) as e:
         print(e)

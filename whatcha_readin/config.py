@@ -2,7 +2,7 @@ import configparser
 
 from whatcha_readin.paths import WhatchaReadinPaths
 
-VERSION = "0.0.3"
+VERSION = "0.0.4"
 
 
 def get_config():
